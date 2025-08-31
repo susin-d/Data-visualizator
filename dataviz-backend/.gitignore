@@ -1,0 +1,16 @@
+# Environment variables and secrets
+.env
+firebase-service-account.json
+
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Django database
+db.sqlite3
+
+# Uploaded media files
+media/

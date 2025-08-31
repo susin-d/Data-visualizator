@@ -1,0 +1,51 @@
+# See https://help.github.com/articles/ignoring-files/ for more about Gitignore files
+
+# Node dependencies
+# We should not commit `node_modules` as they can be re-generated using `package-lock.json`
+# If you are using pnpm, add the `pnpm-lock.yaml` file to your .gitignore
+node_modules/
+/package-lock.json
+
+# Build outputs
+# These are the files created when you build your project for production
+# and should not be committed
+/build
+/dist
+/out
+# Next.js specific build artifacts
+/.next/
+/out/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+# Keep local secrets and configuration out of the repository
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test files
+/coverage
+/.nyc_output
+/.jest-cache
+
+# Other
+*.log
+*.lock
+/tmp
+/temp
+
+# Next.js-specific ignores
+# Keep caches and local server files out of the repo
+.next/
